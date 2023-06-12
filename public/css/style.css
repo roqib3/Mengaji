@@ -1,0 +1,545 @@
+:root{
+    --main-color:#a7ca65;
+    --barcolor: #338d4c;
+    --bg:#338d4c;
+    --border:.1rem solid rgba(255,255,255,.3);
+    --hijau:#063F0C;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+section{
+    padding:2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    text-transform: uppercase;
+    display: inline-block;
+    padding:.9rem 6rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 5.5rem;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 2rem;
+    color:#fff;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .icons div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color:var(--main-color);
+}
+
+#menu-btn{
+    display: none;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(../images/home-img.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+.home .content p{
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:#fff;
+}
+
+
+h1{
+    text-align: center;
+
+    /*membuat semua huruf menjadi kapital*/
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding-top: 60px;
+    
+}
+
+h2{
+    text-align: center;
+
+    /*membuat semua huruf menjadi kapital di awal kalimat*/
+    text-transform: capitalize;
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+}
+.login{
+    margin-top: 60px;
+}
+.tulisan_login{
+    text-align: center;
+    /*membuat semua huruf menjadi kapital*/
+/*    text-transform: uppercase;*/
+    color: #747474;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.kotak_login{
+    width: 350px;
+    background: white;
+    /*meletakkan form ke tengah*/
+    margin: 20px auto;
+    padding: 30px 40px;
+
+}
+
+.kotak_login input{
+    border:2px solid #948F8F;
+    margin: 10px auto;
+}
+
+.form_login{
+    /*membuat lebar form penuh*/
+    box-sizing : border-box;
+    width: 100%;
+    padding: 7px;
+    font-size: 11pt;
+    margin-bottom: 30px;
+}
+
+.tombol_login{
+  background: #948F8F;
+  width: 100%;
+  color:  black;
+  font-weight: bold;
+  padding: 7px 14px;
+  border: none;
+  opacity: 0.9;
+  font-size: 14pt;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.tombol_login:hover {
+  opacity: 1; /*membuat efek transparan pada objek*/
+}
+
+
+.link{
+    color: #2522B1;
+    text-decoration: none;
+    font-size: 11px;
+}
+/*   */
+.tulisan_registrasi{
+    text-align: center;
+    /*membuat semua huruf menjadi kapital*/
+/*    text-transform: uppercase;*/
+    margin-bottom: 20px;
+    color: #747474;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.kotak_registrasi{
+    width: 600px;
+    background: white;
+    /*meletakkan form ke tengah*/
+    margin: 50px auto;
+    padding: 10px 30px 30px 30px;
+
+}
+
+.form_registrasi{
+    /*membuat lebar form penuh*/
+    box-sizing : border-box;
+    width: 100%;
+    padding: 7px;
+    font-size: 11pt;
+    margin-bottom: 20px;
+}
+
+.tombol_registrasi{
+  background: #948F8F;
+  color: black;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: none;
+  opacity: 0.9;
+  font-size: 12pt;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tombol_registrasi:hover {
+  opacity: 1;
+}
+
+.tombol_foto{
+    margin-top: 10px;
+
+}
+
+.link{
+    color:#2522B1;
+    text-decoration: none;
+    font-size: 12pt;
+    position: 10px 20px;
+    cursor: pointer;
+}
+
+.home .btn{
+    margin-left: 21rem;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background:var(--bg);
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex:1 1 35rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height: 1.8;
+    text-align: justify;
+}
+/*------*/
+.menuaktif{
+    color: var(--main-color) !important;
+    font-weight: bold;
+}
+.kotak{
+    width: fit-content;
+    margin: 10px auto;
+    font-size: 20px;
+}
+.fotopp img{
+    width: 200px;
+    height: 220px;
+}
+
+.tabelrekap td{
+    background-color: white;
+    margin: 2px;
+    padding: 2px 5px;
+    text-align: center;
+}
+.tabelrekap th{
+    background-color: black;
+    color: white;
+    padding: 2px 5px;
+    margin: 2px;
+    width: 140px;
+}
+.tbl{
+    display: inline-block;
+    margin: 2px 5px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+.tedit{
+    background-color: orange;
+}
+.thapus{
+    background-color: red;
+}
+.tsimpan{
+    background-color: var(--hijau);
+    color: white;
+    font-size: 19px;
+    margin-left: 0px;
+    margin-top: 7px;
+    padding: 5px 15px;
+}
+.inputan{
+    color: white;
+    margin-top: 5px;
+    width: 500px;
+}
+.inputan input{
+    width: 100%;
+    padding: 4px;
+    font-size: 15px;
+    background-color: white;
+    border: 2px solid #747474;
+    border-radius: 5px;
+}
+.inputan .file{
+    width: 100%;
+    padding: 6px;
+    font-size: 15px;
+    background-color: white;
+    border: 2px solid #747474;
+    border-radius: 5px;
+    margin-bottom: 22px;
+    color: #747474;
+}
+.inputan .file input{
+    width: 160px;
+    padding: 0px;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    margin: 0px;
+    float: right;
+}
+.notifm{
+    font-style: italic;
+    color: red;
+    font-weight: normal;
+    font-size: 13px;
+    float: right;
+}
+audio{
+    height: 20px;
+}
+/*footer*/
+
+.footer{
+    background:var(--black);
+    text-align: center;
+}
+
+.footer .share{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    gap: 1rem;
+}
+
+.footer .share p{
+    font-size: 2rem;
+    font-weight: lighter;
+    text-transform: lowercase;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.8;
+    padding:1rem 10rem;
+    color:#fff;
+}
+
+.footer .share a{
+    padding:.7rem 2rem;
+    color:#fff;
+    border:var(--border);
+    font-size: 2rem;
+    text-transform: lowercase;
+    cursor: pointer;
+    padding:.7rem 2rem;  
+}
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    gap:1rem;
+}
+
+.footer .links a{
+    padding:.7rem 2rem;
+    color:#fff;
+    border:var(--border);
+    font-size: 2rem;
+}
+
+.footer .links a:hover{
+    background:var(--main-color);
+}
+
+
+/* media queries  */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right:0;
+    }
+
+    .header .navbar a{
+        color:var(--black);
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+}
